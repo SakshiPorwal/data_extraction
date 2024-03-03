@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Extraction Result</title>
+</head>
+<body>
+    <h2>PDF Extraction Result</h2>
+    {% if result %}
+        <ul>
+            {% for key, value in result.items %}
+                <li><strong>{{ key }}:</strong> {{ value }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No data extracted.</p>
+    {% endif %}
+</body>
+</html>
